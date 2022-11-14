@@ -1,0 +1,79 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-white: #fff; --bg-white: #fff;
+  --color-gray-primary: #E5E5E5;
+  --color-gray-secondary: #d3d3d3;
+  --text-color-primary: #0f0f0f;
+  --text-bg-primary: #0f0f0f;
+  --color-white-secondary: #F0F0F0;
+  --text-color-gray-primary: #606060;
+  --text-color-gray-secondary: #909090;
+  --color-blue-secondary: #1C62B9;
+}
+
+.container {
+  display: flex;
+  position: relative;
+  top: 56px;
+  z-index: 2;
+}
+
+.container .left-side {
+
+  width: 72px;
+  height: 100vh;
+  padding-bottom: 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+
+
+}
+
+.container .right-side {
+  width: 100%;
+  padding-left: 20px;
+  padding-bottom: 50px;
+  position: relative;
+  overflow-y: scroll;
+  height: 100vh;
+  z-index: 10;
+
+}
+
+.container .left-side.open-menu {
+  width: 240px;
+}
+
+.default-scrooll::-webkit-scrollbar {
+  background-color: transparent;
+  width: 7px;
+}
+
+.default-scrooll::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 20px;
+}
+
+.default-scrooll:hover::-webkit-scrollbar-thumb {
+  background-color: var(--text-color-gray-secondary);
+}
