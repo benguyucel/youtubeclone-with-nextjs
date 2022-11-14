@@ -1,6 +1,6 @@
 import { GetStaticProps, InferGetStaticPropsType } from 'next';
 import Image from 'next/image';
-import React from 'react'
+import React, { Key } from 'react'
 import { videos } from '../data/data'
 
 export const HomeContent = () => {
@@ -23,9 +23,9 @@ export const HomeContent = () => {
     }
     return (
         <div className="video-content">
-            {videos?.map((video: any) => (
-                <div className="video-item">
-                    <div className="image-container">
+            {videos?.map((video: any, idx: any) => (
+                <div className="video-item" key={idx}>
+                    <div className="image-container" >
                         <Image className='image' src={video.image} layout="fill" alt='video' />
                         <span className="video-duration">{video.duration}</span>
                     </div>

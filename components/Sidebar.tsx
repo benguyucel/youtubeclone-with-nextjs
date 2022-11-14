@@ -337,7 +337,7 @@ function Sidebar() {
                 {/* Sidebar Group End  Explore*/}
                 {/* Sidebar Group start  More Content*/}
                 <div className="sidebar-group open-tab-menu">
-                    <h5 className="title">YouTube'dan daha fazla içerik
+                    <h5 className="title">YouTubedan daha fazla içerik
                     </h5>
                     <div className="sidebar-item">
                         <Link href={''}>
